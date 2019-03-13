@@ -20,13 +20,13 @@
 		/* STEP 3: Store the URL of a JSON file in a variable */
 		var requestURL = 'https://smccrindle.github.io/comp1073-json/js/i-scream.json';
 		/* STEP 4: Create a new XHR object */
-
+		var request = new XMLHttpRequest();
 		/* STEP 5: Open a new request using the request() method */
-
+		request.open('GET', requestURL);
 		/* STEP 6: Set JavaScript to accept JSON from the server */
-
+		request.responseType = 'json';
 		/* STEP 7: Send the request with the send() method */
-
+		request.send();
 		/* STEP 8: Add an event handler that listens for the onload event of the JSON file/object */
 
 		/* STEP 9: Build out the populateHeader() function */
